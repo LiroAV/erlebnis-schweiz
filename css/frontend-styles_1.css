@@ -1,0 +1,91 @@
+div.wp-travel-trip-weather-forecast-weather-wrapper{
+    text-align: center;
+    /* padding: 40px 0; */
+    cursor: grab;
+    padding: 40px 35px;
+}
+
+div.wp-travel-trip-weather-forecast-weather-wrapper:active {
+    cursor: grabbing;
+}
+
+div.wp-travel-trip-weather-forecast-city {
+    margin-bottom: 26px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid #fff; */
+    position: relative;
+}
+
+div.wp-travel-trip-weather-forecast-city::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 280px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -140px;
+}
+
+div.wp-travel-trip-weather-forecast-icon-temp-block-wrapper {
+    display: flex;
+    justify-content: space-evenly
+}
+
+div.wp-travel-trip-weather-forecast-temperature strong {
+    font-size: 40px;
+    color: #d0d0d0;
+}
+
+/* div.wp-travel-trip-weather-forecast-weather-icon > img {
+    height: 80px;
+    object-fit: cover;
+    width: auto;
+} */
+
+div.wp-travel-trip-weather-forecast-info-block > div {
+    font-size: 15px;
+    text-align: right;
+}
+
+div.wp-travel-trip-weather-forecast-main-content-wrapper {
+    width: auto;
+}
+
+div.wp-travel-trip-weather-forecast-main-content-wrapper .slick-arrow {
+    z-index: 5;
+    top: 20% !important;
+}
+
+div.wp-travel-trip-weather-forecast-main-content-wrapper .slick-prev {
+    right: inherit !important;
+    left: 0px !important;
+    top: 25px !important;
+    color: #fff !important;
+}
+
+div.wp-travel-trip-weather-forecast-main-content-wrapper .slick-next {
+    right: 12px  !important;
+    top: 25px !important;
+}
+
+div.wp-travel-trip-weather-forecast-main-content-wrapper .slick-next:before, div.wp-travel-trip-weather-forecast-main-content-wrapper .slick-prev:before {
+    color: #fff !important;
+    cursor: pointer !important;
+    background: #ccc;
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+
+/* It will be used by js to add class to hide the div */
+div.wp-travel-trip-weather-forecast-display-none {
+    display: none !important;
+}
+
+
+/* Mobile responsive css */
+@media only screen and ( max-width: 768px ) {
+    div.wp-travel-trip-weather-forecast-main-content-wrapper {
+        width: auto;
+    }
+}
